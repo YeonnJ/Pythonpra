@@ -12,4 +12,5 @@ movies = soup.select('#old_content > table > tbody > tr')
 for movie in movies:
     a = movie.select_one('td.title > div > a')
     if a is not None:
-        print(a)
+        title = a.text
+        star = 
